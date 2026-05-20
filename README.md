@@ -32,17 +32,15 @@ from the App bundle.
 - `truncate_syndication_wal.sh`: The underlying POSIX script that sequentially
   disables and kills the daemons, monitors file locks via `lsof` to prevent
   database corruption, and safely truncates the write-ahead log.
-- Launch Agent:
-  - Automates execution on a periodic background interval (e.g., hourly).
-  - On macOS Monterey: `com.lyraphase.HydraKillerLauncher.truncatesyndication.plist`
+- Launch Agent: Automates execution on a periodic background interval (e.g., hourly).
+  - **On macOS Monterey:** `com.lyraphase.HydraKillerLauncher.truncatesyndication.plist`
     A native user `LaunchAgent` that uses the older `Program` and
    `ProgramArguments` `plist` keys, for macOS 12.x compatibility
-  - On macOS Ventura or later: `com.lyraphase.HydraKillerLauncher.plist`: A
+  - **On macOS Ventura or later:** `com.lyraphase.HydraKillerLauncher.plist`: A
     native bundled `LaunchAgent` that uses `BundleProgram` `plist` key to launch
     the embedded shim and script.  This makes it possible for the
     `HydraKillerLauncher.app` to register the `LaunchAgent` with Apple's
     `SMAppService` API.
-
 
 ------------------------------
 
@@ -93,23 +91,29 @@ script, this allows it to be whitelisted natively in macOS System Settings:
 - Locate `/Applications/HydraKillerLauncher.app` and add it to the list.
 - Toggle the permission switch next to it to `On`.
 
-## 4. Load the Service
+## 4. Start the Service
 
 ### macOS Ventura `13.0` and Above
 
 To run manual mitigation immediately at any time:
 
-    launchctl start com.lyraphase.HydraKiller
+    launchctl start com.lyraphase.HydraKillerLauncher
 
 ### macOS Monterey `12.x`
 
-Load the periodic background agent:
-
-    launchctl load ~/Library/LaunchAgents/com.lyraphase.HydraKiller.truncatesyndication.plist
-
 To run manual mitigation immediately at any time:
 
-    launchctl start com.lyraphase.HydraKiller.truncatesyndication
+    launchctl start com.lyraphase.HydraKillerLauncher.truncatesyndication
+
+## 5. Print Service Details
+
+### macOS Ventura `13.0` and Above
+
+    launchctl print gui/$(id -u)/com.lyraphase.HydraKillerLauncher
+
+### macOS Monterey `12.x`
+
+    launchctl print gui/$(id -u)/com.lyraphase.HydraKillerLauncher.truncatesyndication
 
 ## 🧾 License
 
