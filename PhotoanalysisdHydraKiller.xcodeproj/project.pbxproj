@@ -17,6 +17,7 @@
 		015D9C422FBD928D00FDE8AA /* HydraKillerLauncherUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 015D9C412FBD928D00FDE8AA /* HydraKillerLauncherUITests.m */; };
 		015D9C442FBD928D00FDE8AA /* HydraKillerLauncherUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 015D9C432FBD928D00FDE8AA /* HydraKillerLauncherUITestsLaunchTests.m */; };
 		015D9C4F2FBD938600FDE8AA /* truncate_syndication_wal.sh in Resources */ = {isa = PBXBuildFile; fileRef = 015D9C4E2FBD933300FDE8AA /* truncate_syndication_wal.sh */; };
+		015D9C512FBD981700FDE8AA /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 015D9C142FBC411E00FDE8AA /* main.c */; };
 		015D9C532FBD991200FDE8AA /* com.lyraphase.truncatesyndication.plist in Resources */ = {isa = PBXBuildFile; fileRef = 015D9C522FBD991200FDE8AA /* com.lyraphase.truncatesyndication.plist */; };
 /* End PBXBuildFile section */
 
@@ -327,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				015D9C512FBD981700FDE8AA /* main.c in Sources */,
 				015D9C262FBD928A00FDE8AA /* ViewController.m in Sources */,
 				015D9C2D2FBD928D00FDE8AA /* main.m in Sources */,
 				015D9C232FBD928A00FDE8AA /* AppDelegate.m in Sources */,
