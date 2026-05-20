@@ -19,6 +19,7 @@
 		015D9C4F2FBD938600FDE8AA /* truncate_syndication_wal.sh in Resources */ = {isa = PBXBuildFile; fileRef = 015D9C4E2FBD933300FDE8AA /* truncate_syndication_wal.sh */; };
 		015D9C512FBD981700FDE8AA /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 015D9C142FBC411E00FDE8AA /* main.c */; };
 		015D9C532FBD991200FDE8AA /* com.lyraphase.truncatesyndication.plist in Resources */ = {isa = PBXBuildFile; fileRef = 015D9C522FBD991200FDE8AA /* com.lyraphase.truncatesyndication.plist */; };
+		015D9C552FBD9BB300FDE8AA /* truncatesyndication in CopyFiles */ = {isa = PBXBuildFile; fileRef = 015D9C112FBC411E00FDE8AA /* truncatesyndication */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,16 @@
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
+		};
+		015D9C542FBD9B6400FDE8AA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = LaunchAgents;
+			dstSubfolderSpec = 6;
+			files = (
+				015D9C552FBD9BB300FDE8AA /* truncatesyndication in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -194,6 +205,7 @@
 				015D9C1B2FBD928A00FDE8AA /* Sources */,
 				015D9C1C2FBD928A00FDE8AA /* Frameworks */,
 				015D9C1D2FBD928A00FDE8AA /* Resources */,
+				015D9C542FBD9B6400FDE8AA /* CopyFiles */,
 			);
 			buildRules = (
 			);
