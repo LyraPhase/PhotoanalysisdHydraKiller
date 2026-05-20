@@ -86,7 +86,7 @@ In case the Photos library permissions were not enough, you can enable
 _Full Disk Access_ to workaround issues with Apple's app sandbox permissions.
 
 Because the app relies on a compiled app bundle rather than a raw terminal
-script, this allows it to be Whitelisted natively in macOS System Settings:
+script, this allows it to be whitelisted natively in macOS System Settings:
 
 - Navigate to `System Settings` -> `Privacy & Security` -> `Full Disk Access`.
 - Click the `+` (Plus) button.
