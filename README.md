@@ -57,16 +57,17 @@ possibly more entitlements & code signing debugging.
 
 ### 1. Embed and Build the Application
 
-1. Open the project in Xcode. Ensure your target type is a macOS App Template named `HydraKillerLauncher`.
-2. Compile the project (`Product` -> `Build For` -> `Running`) or press
+- Open the project in Xcode. Ensure your target type is a macOS App Template named `HydraKillerLauncher`.
+- Compile the project (`Product` -> `Build For` -> `Running`) or press
    <kbd>⌘</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd>.
-3. Find the built App (`Product` -> `Show Build Folder in Finder`)
-4. Move the compiled App package to your `/Applications` folder.
+- Find the built App (`Product` -> `Show Build Folder in Finder`)
+- Move the compiled App package to your `/Applications` folder.
    Drag and drop the `HydraKillerLauncher.app`, OR run:
 
-    cp -R /path/to/built/HydraKillerLauncher.app ~/Applications
+      cp -R /path/to/built/HydraKillerLauncher.app ~/Applications
 
 ### 2. Configure the LaunchAgent Daemon
+
 Copy the com.user.truncatesyndication.plist configuration file into your user `LaunchAgents` folder:
 
     cp com.user.truncatesyndication.plist ~/Library/LaunchAgents/
@@ -79,10 +80,10 @@ Full Disk Access to workaround issues with Apple's app sandbox permissions.
 Because the app relies on a compiled app bundle rather than a raw terminal
 script, this allows it to be Whitelisted natively in macOS System Settings:
 
-   1. Navigate to `System Settings` -> `Privacy & Security` -> `Full Disk Access`.
-   2. Click the `+` (Plus) button.
-   3. Locate `/Applications/HydraKillerLauncher.app` and add it to the list.
-   4. Toggle the permission switch next to it to `On`.
+- Navigate to `System Settings` -> `Privacy & Security` -> `Full Disk Access`.
+- Click the `+` (Plus) button.
+- Locate `/Applications/HydraKillerLauncher.app` and add it to the list.
+- Toggle the permission switch next to it to `On`.
 
 ## 4. Load the Service
 
