@@ -19,6 +19,7 @@
 		015D9C5B2FBDA16400FDE8AA /* truncatesyndication in CopyFiles */ = {isa = PBXBuildFile; fileRef = 015D9C112FBC411E00FDE8AA /* truncatesyndication */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		015D9C5D2FBDA18E00FDE8AA /* com.lyraphase.truncatesyndication.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = 015D9C522FBD991200FDE8AA /* com.lyraphase.truncatesyndication.plist */; };
 		015D9C632FBDA89100FDE8AA /* truncate_syndication_wal.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 015D9C4E2FBD933300FDE8AA /* truncate_syndication_wal.sh */; };
+		015D9C682FBDB4F500FDE8AA /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 015D9C672FBDB4F500FDE8AA /* ServiceManagement.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		015D9C522FBD991200FDE8AA /* com.lyraphase.truncatesyndication.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = com.lyraphase.truncatesyndication.plist; sourceTree = "<group>"; };
 		015D9C642FBDAC6E00FDE8AA /* truncatesyndication.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = truncatesyndication.entitlements; sourceTree = "<group>"; };
 		015D9C652FBDB0F300FDE8AA /* truncatesyndication.Debug.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = truncatesyndication.Debug.entitlements; sourceTree = "<group>"; };
+		015D9C672FBDB4F500FDE8AA /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				015D9C682FBDB4F500FDE8AA /* ServiceManagement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +144,7 @@
 				015D9C362FBD928D00FDE8AA /* HydraKillerLauncherTests */,
 				015D9C402FBD928D00FDE8AA /* HydraKillerLauncherUITests */,
 				015D9C122FBC411E00FDE8AA /* Products */,
+				015D9C662FBDB4F300FDE8AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,6 +201,14 @@
 				015D9C432FBD928D00FDE8AA /* HydraKillerLauncherUITestsLaunchTests.m */,
 			);
 			path = HydraKillerLauncherUITests;
+			sourceTree = "<group>";
+		};
+		015D9C662FBDB4F300FDE8AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				015D9C672FBDB4F500FDE8AA /* ServiceManagement.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
