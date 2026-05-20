@@ -8,7 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		015D9C152FBC411E00FDE8AA /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 015D9C142FBC411E00FDE8AA /* main.c */; };
+		015D9C232FBD928A00FDE8AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 015D9C222FBD928A00FDE8AA /* AppDelegate.m */; };
+		015D9C262FBD928A00FDE8AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 015D9C252FBD928A00FDE8AA /* ViewController.m */; };
+		015D9C282FBD928D00FDE8AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 015D9C272FBD928D00FDE8AA /* Assets.xcassets */; };
+		015D9C2B2FBD928D00FDE8AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 015D9C292FBD928D00FDE8AA /* Main.storyboard */; };
+		015D9C2D2FBD928D00FDE8AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 015D9C2C2FBD928D00FDE8AA /* main.m */; };
+		015D9C382FBD928D00FDE8AA /* HydraKillerLauncherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 015D9C372FBD928D00FDE8AA /* HydraKillerLauncherTests.m */; };
+		015D9C422FBD928D00FDE8AA /* HydraKillerLauncherUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 015D9C412FBD928D00FDE8AA /* HydraKillerLauncherUITests.m */; };
+		015D9C442FBD928D00FDE8AA /* HydraKillerLauncherUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 015D9C432FBD928D00FDE8AA /* HydraKillerLauncherUITestsLaunchTests.m */; };
+		015D9C4F2FBD938600FDE8AA /* truncate_syndication_wal.sh in Resources */ = {isa = PBXBuildFile; fileRef = 015D9C4E2FBD933300FDE8AA /* truncate_syndication_wal.sh */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		015D9C342FBD928D00FDE8AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 015D9C092FBC411D00FDE8AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 015D9C1E2FBD928A00FDE8AA;
+			remoteInfo = HydraKillerLauncher;
+		};
+		015D9C3E2FBD928D00FDE8AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 015D9C092FBC411D00FDE8AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 015D9C1E2FBD928A00FDE8AA;
+			remoteInfo = HydraKillerLauncher;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		015D9C0F2FBC411E00FDE8AA /* CopyFiles */ = {
@@ -23,12 +49,48 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		015D9C112FBC411E00FDE8AA /* PhotoanalysisdHydraKiller */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PhotoanalysisdHydraKiller; sourceTree = BUILT_PRODUCTS_DIR; };
+		015D9C112FBC411E00FDE8AA /* truncatesyndication */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = truncatesyndication; sourceTree = BUILT_PRODUCTS_DIR; };
 		015D9C142FBC411E00FDE8AA /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		015D9C1F2FBD928A00FDE8AA /* HydraKillerLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HydraKillerLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		015D9C212FBD928A00FDE8AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		015D9C222FBD928A00FDE8AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		015D9C242FBD928A00FDE8AA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		015D9C252FBD928A00FDE8AA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		015D9C272FBD928D00FDE8AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		015D9C2A2FBD928D00FDE8AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		015D9C2C2FBD928D00FDE8AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		015D9C2E2FBD928D00FDE8AA /* HydraKillerLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HydraKillerLauncher.entitlements; sourceTree = "<group>"; };
+		015D9C332FBD928D00FDE8AA /* HydraKillerLauncherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HydraKillerLauncherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		015D9C372FBD928D00FDE8AA /* HydraKillerLauncherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HydraKillerLauncherTests.m; sourceTree = "<group>"; };
+		015D9C3D2FBD928D00FDE8AA /* HydraKillerLauncherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HydraKillerLauncherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		015D9C412FBD928D00FDE8AA /* HydraKillerLauncherUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HydraKillerLauncherUITests.m; sourceTree = "<group>"; };
+		015D9C432FBD928D00FDE8AA /* HydraKillerLauncherUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HydraKillerLauncherUITestsLaunchTests.m; sourceTree = "<group>"; };
+		015D9C4E2FBD933300FDE8AA /* truncate_syndication_wal.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = truncate_syndication_wal.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		015D9C0E2FBC411E00FDE8AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		015D9C1C2FBD928A00FDE8AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		015D9C302FBD928D00FDE8AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		015D9C3A2FBD928D00FDE8AA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				015D9C132FBC411E00FDE8AA /* PhotoanalysisdHydraKiller */,
+				015D9C202FBD928A00FDE8AA /* HydraKillerLauncher */,
+				015D9C362FBD928D00FDE8AA /* HydraKillerLauncherTests */,
+				015D9C402FBD928D00FDE8AA /* HydraKillerLauncherUITests */,
 				015D9C122FBC411E00FDE8AA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,7 +114,10 @@
 		015D9C122FBC411E00FDE8AA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				015D9C112FBC411E00FDE8AA /* PhotoanalysisdHydraKiller */,
+				015D9C112FBC411E00FDE8AA /* truncatesyndication */,
+				015D9C1F2FBD928A00FDE8AA /* HydraKillerLauncher.app */,
+				015D9C332FBD928D00FDE8AA /* HydraKillerLauncherTests.xctest */,
+				015D9C3D2FBD928D00FDE8AA /* HydraKillerLauncherUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,16 +126,49 @@
 			isa = PBXGroup;
 			children = (
 				015D9C142FBC411E00FDE8AA /* main.c */,
+				015D9C4E2FBD933300FDE8AA /* truncate_syndication_wal.sh */,
 			);
 			path = PhotoanalysisdHydraKiller;
+			sourceTree = "<group>";
+		};
+		015D9C202FBD928A00FDE8AA /* HydraKillerLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				015D9C212FBD928A00FDE8AA /* AppDelegate.h */,
+				015D9C222FBD928A00FDE8AA /* AppDelegate.m */,
+				015D9C242FBD928A00FDE8AA /* ViewController.h */,
+				015D9C252FBD928A00FDE8AA /* ViewController.m */,
+				015D9C272FBD928D00FDE8AA /* Assets.xcassets */,
+				015D9C292FBD928D00FDE8AA /* Main.storyboard */,
+				015D9C2C2FBD928D00FDE8AA /* main.m */,
+				015D9C2E2FBD928D00FDE8AA /* HydraKillerLauncher.entitlements */,
+			);
+			path = HydraKillerLauncher;
+			sourceTree = "<group>";
+		};
+		015D9C362FBD928D00FDE8AA /* HydraKillerLauncherTests */ = {
+			isa = PBXGroup;
+			children = (
+				015D9C372FBD928D00FDE8AA /* HydraKillerLauncherTests.m */,
+			);
+			path = HydraKillerLauncherTests;
+			sourceTree = "<group>";
+		};
+		015D9C402FBD928D00FDE8AA /* HydraKillerLauncherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				015D9C412FBD928D00FDE8AA /* HydraKillerLauncherUITests.m */,
+				015D9C432FBD928D00FDE8AA /* HydraKillerLauncherUITestsLaunchTests.m */,
+			);
+			path = HydraKillerLauncherUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		015D9C102FBC411E00FDE8AA /* PhotoanalysisdHydraKiller */ = {
+		015D9C102FBC411E00FDE8AA /* truncatesyndication */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 015D9C182FBC411E00FDE8AA /* Build configuration list for PBXNativeTarget "PhotoanalysisdHydraKiller" */;
+			buildConfigurationList = 015D9C182FBC411E00FDE8AA /* Build configuration list for PBXNativeTarget "truncatesyndication" */;
 			buildPhases = (
 				015D9C0D2FBC411E00FDE8AA /* Sources */,
 				015D9C0E2FBC411E00FDE8AA /* Frameworks */,
@@ -77,10 +178,63 @@
 			);
 			dependencies = (
 			);
-			name = PhotoanalysisdHydraKiller;
+			name = truncatesyndication;
 			productName = PhotoanalysisdHydraKiller;
-			productReference = 015D9C112FBC411E00FDE8AA /* PhotoanalysisdHydraKiller */;
+			productReference = 015D9C112FBC411E00FDE8AA /* truncatesyndication */;
 			productType = "com.apple.product-type.tool";
+		};
+		015D9C1E2FBD928A00FDE8AA /* HydraKillerLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 015D9C452FBD928D00FDE8AA /* Build configuration list for PBXNativeTarget "HydraKillerLauncher" */;
+			buildPhases = (
+				015D9C1B2FBD928A00FDE8AA /* Sources */,
+				015D9C1C2FBD928A00FDE8AA /* Frameworks */,
+				015D9C1D2FBD928A00FDE8AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HydraKillerLauncher;
+			productName = HydraKillerLauncher;
+			productReference = 015D9C1F2FBD928A00FDE8AA /* HydraKillerLauncher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		015D9C322FBD928D00FDE8AA /* HydraKillerLauncherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 015D9C482FBD928D00FDE8AA /* Build configuration list for PBXNativeTarget "HydraKillerLauncherTests" */;
+			buildPhases = (
+				015D9C2F2FBD928D00FDE8AA /* Sources */,
+				015D9C302FBD928D00FDE8AA /* Frameworks */,
+				015D9C312FBD928D00FDE8AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				015D9C352FBD928D00FDE8AA /* PBXTargetDependency */,
+			);
+			name = HydraKillerLauncherTests;
+			productName = HydraKillerLauncherTests;
+			productReference = 015D9C332FBD928D00FDE8AA /* HydraKillerLauncherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		015D9C3C2FBD928D00FDE8AA /* HydraKillerLauncherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 015D9C4B2FBD928D00FDE8AA /* Build configuration list for PBXNativeTarget "HydraKillerLauncherUITests" */;
+			buildPhases = (
+				015D9C392FBD928D00FDE8AA /* Sources */,
+				015D9C3A2FBD928D00FDE8AA /* Frameworks */,
+				015D9C3B2FBD928D00FDE8AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				015D9C3F2FBD928D00FDE8AA /* PBXTargetDependency */,
+			);
+			name = HydraKillerLauncherUITests;
+			productName = HydraKillerLauncherUITests;
+			productReference = 015D9C3D2FBD928D00FDE8AA /* HydraKillerLauncherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,6 +248,17 @@
 				TargetAttributes = {
 					015D9C102FBC411E00FDE8AA = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					015D9C1E2FBD928A00FDE8AA = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					015D9C322FBD928D00FDE8AA = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 015D9C1E2FBD928A00FDE8AA;
+					};
+					015D9C3C2FBD928D00FDE8AA = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 015D9C1E2FBD928A00FDE8AA;
 					};
 				};
 			};
@@ -110,10 +275,40 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				015D9C102FBC411E00FDE8AA /* PhotoanalysisdHydraKiller */,
+				015D9C102FBC411E00FDE8AA /* truncatesyndication */,
+				015D9C1E2FBD928A00FDE8AA /* HydraKillerLauncher */,
+				015D9C322FBD928D00FDE8AA /* HydraKillerLauncherTests */,
+				015D9C3C2FBD928D00FDE8AA /* HydraKillerLauncherUITests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		015D9C1D2FBD928A00FDE8AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				015D9C282FBD928D00FDE8AA /* Assets.xcassets in Resources */,
+				015D9C4F2FBD938600FDE8AA /* truncate_syndication_wal.sh in Resources */,
+				015D9C2B2FBD928D00FDE8AA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		015D9C312FBD928D00FDE8AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		015D9C3B2FBD928D00FDE8AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		015D9C0D2FBC411E00FDE8AA /* Sources */ = {
@@ -124,7 +319,58 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		015D9C1B2FBD928A00FDE8AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				015D9C262FBD928A00FDE8AA /* ViewController.m in Sources */,
+				015D9C2D2FBD928D00FDE8AA /* main.m in Sources */,
+				015D9C232FBD928A00FDE8AA /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		015D9C2F2FBD928D00FDE8AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				015D9C382FBD928D00FDE8AA /* HydraKillerLauncherTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		015D9C392FBD928D00FDE8AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				015D9C442FBD928D00FDE8AA /* HydraKillerLauncherUITestsLaunchTests.m in Sources */,
+				015D9C422FBD928D00FDE8AA /* HydraKillerLauncherUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		015D9C352FBD928D00FDE8AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 015D9C1E2FBD928A00FDE8AA /* HydraKillerLauncher */;
+			targetProxy = 015D9C342FBD928D00FDE8AA /* PBXContainerItemProxy */;
+		};
+		015D9C3F2FBD928D00FDE8AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 015D9C1E2FBD928A00FDE8AA /* HydraKillerLauncher */;
+			targetProxy = 015D9C3E2FBD928D00FDE8AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		015D9C292FBD928D00FDE8AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				015D9C2A2FBD928D00FDE8AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		015D9C162FBC411E00FDE8AA /* Debug */ = {
@@ -257,6 +503,116 @@
 			};
 			name = Release;
 		};
+		015D9C462FBD928D00FDE8AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HydraKillerLauncher/HydraKillerLauncher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Photoanalysisd Hydra Killer Launcher";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 LyraPhase. All rights reserved.";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyraphase.HydraKillerLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		015D9C472FBD928D00FDE8AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HydraKillerLauncher/HydraKillerLauncher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Photoanalysisd Hydra Killer Launcher";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 LyraPhase. All rights reserved.";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyraphase.HydraKillerLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		015D9C492FBD928D00FDE8AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyraphase.HydraKillerLauncherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HydraKillerLauncher.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HydraKillerLauncher";
+			};
+			name = Debug;
+		};
+		015D9C4A2FBD928D00FDE8AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyraphase.HydraKillerLauncherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HydraKillerLauncher.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HydraKillerLauncher";
+			};
+			name = Release;
+		};
+		015D9C4C2FBD928D00FDE8AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyraphase.HydraKillerLauncherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_TARGET_NAME = HydraKillerLauncher;
+			};
+			name = Debug;
+		};
+		015D9C4D2FBD928D00FDE8AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyraphase.HydraKillerLauncherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_TARGET_NAME = HydraKillerLauncher;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -269,11 +625,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		015D9C182FBC411E00FDE8AA /* Build configuration list for PBXNativeTarget "PhotoanalysisdHydraKiller" */ = {
+		015D9C182FBC411E00FDE8AA /* Build configuration list for PBXNativeTarget "truncatesyndication" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				015D9C192FBC411E00FDE8AA /* Debug */,
 				015D9C1A2FBC411E00FDE8AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		015D9C452FBD928D00FDE8AA /* Build configuration list for PBXNativeTarget "HydraKillerLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015D9C462FBD928D00FDE8AA /* Debug */,
+				015D9C472FBD928D00FDE8AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		015D9C482FBD928D00FDE8AA /* Build configuration list for PBXNativeTarget "HydraKillerLauncherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015D9C492FBD928D00FDE8AA /* Debug */,
+				015D9C4A2FBD928D00FDE8AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		015D9C4B2FBD928D00FDE8AA /* Build configuration list for PBXNativeTarget "HydraKillerLauncherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015D9C4C2FBD928D00FDE8AA /* Debug */,
+				015D9C4D2FBD928D00FDE8AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
