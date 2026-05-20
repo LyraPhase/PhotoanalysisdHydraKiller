@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		015D9C152FBC411E00FDE8AA /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 015D9C142FBC411E00FDE8AA /* main.c */; };
 		015D9C232FBD928A00FDE8AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 015D9C222FBD928A00FDE8AA /* AppDelegate.m */; };
 		015D9C262FBD928A00FDE8AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 015D9C252FBD928A00FDE8AA /* ViewController.m */; };
 		015D9C282FBD928D00FDE8AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 015D9C272FBD928D00FDE8AA /* Assets.xcassets */; };
@@ -16,10 +15,10 @@
 		015D9C382FBD928D00FDE8AA /* HydraKillerLauncherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 015D9C372FBD928D00FDE8AA /* HydraKillerLauncherTests.m */; };
 		015D9C422FBD928D00FDE8AA /* HydraKillerLauncherUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 015D9C412FBD928D00FDE8AA /* HydraKillerLauncherUITests.m */; };
 		015D9C442FBD928D00FDE8AA /* HydraKillerLauncherUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 015D9C432FBD928D00FDE8AA /* HydraKillerLauncherUITestsLaunchTests.m */; };
-		015D9C4F2FBD938600FDE8AA /* truncate_syndication_wal.sh in Resources */ = {isa = PBXBuildFile; fileRef = 015D9C4E2FBD933300FDE8AA /* truncate_syndication_wal.sh */; };
-		015D9C512FBD981700FDE8AA /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 015D9C142FBC411E00FDE8AA /* main.c */; };
-		015D9C532FBD991200FDE8AA /* com.lyraphase.truncatesyndication.plist in Resources */ = {isa = PBXBuildFile; fileRef = 015D9C522FBD991200FDE8AA /* com.lyraphase.truncatesyndication.plist */; };
-		015D9C552FBD9BB300FDE8AA /* truncatesyndication in CopyFiles */ = {isa = PBXBuildFile; fileRef = 015D9C112FBC411E00FDE8AA /* truncatesyndication */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		015D9C572FBDA06F00FDE8AA /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 015D9C142FBC411E00FDE8AA /* main.c */; };
+		015D9C582FBDA07F00FDE8AA /* truncate_syndication_wal.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 015D9C4E2FBD933300FDE8AA /* truncate_syndication_wal.sh */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		015D9C5B2FBDA16400FDE8AA /* truncatesyndication in CopyFiles */ = {isa = PBXBuildFile; fileRef = 015D9C112FBC411E00FDE8AA /* truncatesyndication */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		015D9C5D2FBDA18E00FDE8AA /* com.lyraphase.truncatesyndication.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = 015D9C522FBD991200FDE8AA /* com.lyraphase.truncatesyndication.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +35,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 015D9C1E2FBD928A00FDE8AA;
 			remoteInfo = HydraKillerLauncher;
+		};
+		015D9C592FBDA0A400FDE8AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 015D9C092FBC411D00FDE8AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 015D9C102FBC411E00FDE8AA;
+			remoteInfo = truncatesyndication;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -55,7 +61,18 @@
 			dstPath = LaunchAgents;
 			dstSubfolderSpec = 6;
 			files = (
-				015D9C552FBD9BB300FDE8AA /* truncatesyndication in CopyFiles */,
+				015D9C5B2FBDA16400FDE8AA /* truncatesyndication in CopyFiles */,
+				015D9C582FBDA07F00FDE8AA /* truncate_syndication_wal.sh in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		015D9C5C2FBDA16F00FDE8AA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = LaunchAgents;
+			dstSubfolderSpec = 7;
+			files = (
+				015D9C5D2FBDA18E00FDE8AA /* com.lyraphase.truncatesyndication.plist in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,10 +223,12 @@
 				015D9C1C2FBD928A00FDE8AA /* Frameworks */,
 				015D9C1D2FBD928A00FDE8AA /* Resources */,
 				015D9C542FBD9B6400FDE8AA /* CopyFiles */,
+				015D9C5C2FBDA16F00FDE8AA /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				015D9C5A2FBDA0A400FDE8AA /* PBXTargetDependency */,
 			);
 			name = HydraKillerLauncher;
 			productName = HydraKillerLauncher;
@@ -304,9 +323,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				015D9C532FBD991200FDE8AA /* com.lyraphase.truncatesyndication.plist in Resources */,
 				015D9C282FBD928D00FDE8AA /* Assets.xcassets in Resources */,
-				015D9C4F2FBD938600FDE8AA /* truncate_syndication_wal.sh in Resources */,
 				015D9C2B2FBD928D00FDE8AA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,7 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				015D9C152FBC411E00FDE8AA /* main.c in Sources */,
+				015D9C572FBDA06F00FDE8AA /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +357,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				015D9C512FBD981700FDE8AA /* main.c in Sources */,
 				015D9C262FBD928A00FDE8AA /* ViewController.m in Sources */,
 				015D9C2D2FBD928D00FDE8AA /* main.m in Sources */,
 				015D9C232FBD928A00FDE8AA /* AppDelegate.m in Sources */,
@@ -376,6 +392,11 @@
 			isa = PBXTargetDependency;
 			target = 015D9C1E2FBD928A00FDE8AA /* HydraKillerLauncher */;
 			targetProxy = 015D9C3E2FBD928D00FDE8AA /* PBXContainerItemProxy */;
+		};
+		015D9C5A2FBDA0A400FDE8AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 015D9C102FBC411E00FDE8AA /* truncatesyndication */;
+			targetProxy = 015D9C592FBDA0A400FDE8AA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
