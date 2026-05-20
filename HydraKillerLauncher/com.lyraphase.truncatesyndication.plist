@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>com.lyraphase.HydraKillerLauncher.truncatesyndication</string>
+	<string>com.lyraphase.HydraKillerLauncher</string>
 	<key>BundleProgram</key>
-	<string>truncatesyndication</string>
+	<string>Contents/MacOS/LaunchAgents/truncatesyndication</string>
 	<key>ProgramArguments</key>
 	<array/>
 	<key>StartInterval</key>
