@@ -251,6 +251,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_NSHumanReadableCopyright[sdk=*]" = "© 🄯 2026 LyraPhase";
 				MACOSX_DEPLOYMENT_TARGET = 12.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
