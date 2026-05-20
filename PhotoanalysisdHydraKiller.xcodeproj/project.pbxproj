@@ -17,6 +17,7 @@
 		015D9C422FBD928D00FDE8AA /* HydraKillerLauncherUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 015D9C412FBD928D00FDE8AA /* HydraKillerLauncherUITests.m */; };
 		015D9C442FBD928D00FDE8AA /* HydraKillerLauncherUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 015D9C432FBD928D00FDE8AA /* HydraKillerLauncherUITestsLaunchTests.m */; };
 		015D9C4F2FBD938600FDE8AA /* truncate_syndication_wal.sh in Resources */ = {isa = PBXBuildFile; fileRef = 015D9C4E2FBD933300FDE8AA /* truncate_syndication_wal.sh */; };
+		015D9C532FBD991200FDE8AA /* com.lyraphase.truncatesyndication.plist in Resources */ = {isa = PBXBuildFile; fileRef = 015D9C522FBD991200FDE8AA /* com.lyraphase.truncatesyndication.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		015D9C412FBD928D00FDE8AA /* HydraKillerLauncherUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HydraKillerLauncherUITests.m; sourceTree = "<group>"; };
 		015D9C432FBD928D00FDE8AA /* HydraKillerLauncherUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HydraKillerLauncherUITestsLaunchTests.m; sourceTree = "<group>"; };
 		015D9C4E2FBD933300FDE8AA /* truncate_syndication_wal.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = truncate_syndication_wal.sh; sourceTree = "<group>"; };
+		015D9C522FBD991200FDE8AA /* com.lyraphase.truncatesyndication.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = com.lyraphase.truncatesyndication.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				015D9C292FBD928D00FDE8AA /* Main.storyboard */,
 				015D9C2C2FBD928D00FDE8AA /* main.m */,
 				015D9C2E2FBD928D00FDE8AA /* HydraKillerLauncher.entitlements */,
+				015D9C522FBD991200FDE8AA /* com.lyraphase.truncatesyndication.plist */,
 			);
 			path = HydraKillerLauncher;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				015D9C532FBD991200FDE8AA /* com.lyraphase.truncatesyndication.plist in Resources */,
 				015D9C282FBD928D00FDE8AA /* Assets.xcassets in Resources */,
 				015D9C4F2FBD938600FDE8AA /* truncate_syndication_wal.sh in Resources */,
 				015D9C2B2FBD928D00FDE8AA /* Main.storyboard in Resources */,
