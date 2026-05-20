@@ -68,14 +68,22 @@ possibly more entitlements & code signing debugging.
 
 ### 2. Configure the LaunchAgent Daemon
 
-Copy the com.user.truncatesyndication.plist configuration file into your user `LaunchAgents` folder:
+#### macOS Ventura `13.0` and Above
 
-    cp com.user.truncatesyndication.plist ~/Library/LaunchAgents/
+Run the `HydraKillerLauncher.app` once to trigger registering the `LaunchAgent`.
+
+#### macOS Monterey `12.x`
+
+Copy the `com.lyraphase.HydraKillerLauncher.truncatesyndication.plist`
+configuration file into your user `LaunchAgents` folder:
+
+    cp HydraKillerLauncher/com.lyraphase.HydraKillerLauncher.truncatesyndication.plist  ~/Library/LaunchAgents/
+    launchctl load ~/Library/LaunchAgents/com.lyraphase.HydraKillerLauncher.truncatesyndication.plist
 
 ### 3. Authorize Full Disk Access (Optional)
 
 In case the Photos library permissions were not enough, you can enable
-Full Disk Access to workaround issues with Apple's app sandbox permissions.
+_Full Disk Access_ to workaround issues with Apple's app sandbox permissions.
 
 Because the app relies on a compiled app bundle rather than a raw terminal
 script, this allows it to be Whitelisted natively in macOS System Settings:
@@ -87,11 +95,19 @@ script, this allows it to be Whitelisted natively in macOS System Settings:
 
 ## 4. Load the Service
 
-Start the periodic background agent:
+### macOS Ventura `13.0` and Above
+
+To run manual mitigation immediately at any time:
+
+    launchctl start com.lyraphase.HydraKiller
+
+### macOS Monterey `12.x`
+
+Load the periodic background agent:
 
     launchctl load ~/Library/LaunchAgents/com.lyraphase.HydraKiller.truncatesyndication.plist
 
-To run a manual mitigation check immediately at any time:
+To run manual mitigation immediately at any time:
 
     launchctl start com.lyraphase.HydraKiller.truncatesyndication
 
