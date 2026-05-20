@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>com.lyraphase.truncatesyndication</string>
+	<string>com.lyraphase.HydraKillerLauncher.truncatesyndication</string>
 	<key>BundleProgram</key>
 	<string>truncatesyndication</string>
 	<key>ProgramArguments</key>
@@ -13,8 +13,8 @@
 	<key>RunAtLoad</key>
 	<true/>
 	<key>StandardErrorPath</key>
-	<string>/tmp/com.lyraphase.truncatesyndication.err</string>
+	<string>/tmp/com.lyraphase.HydraKillerLauncher.truncatesyndication.err</string>
 	<key>StandardOutPath</key>
-	<string>/tmp/com.lyraphase.truncatesyndication.out</string>
+	<string>/tmp/com.lyraphase.HydraKillerLauncher.truncatesyndication.out</string>
 </dict>
 </plist>

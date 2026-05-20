@@ -535,7 +535,7 @@
 				INFOPLIST_KEY_NSHumanReadableCopyright = "© 🄯 2026 LyraPhase";
 				MACOSX_DEPLOYMENT_TARGET = 12.7;
 				MARKETING_VERSION = 0.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lyraphase.truncatesyndication;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyraphase.HydraKillerLauncher.truncatesyndication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -554,7 +554,7 @@
 				"INFOPLIST_KEY_NSHumanReadableCopyright[sdk=*]" = "© 🄯 2026 LyraPhase";
 				MACOSX_DEPLOYMENT_TARGET = 12.7;
 				MARKETING_VERSION = 0.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lyraphase.truncatesyndication;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyraphase.HydraKillerLauncher.truncatesyndication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
