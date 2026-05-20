@@ -15,8 +15,8 @@ DB_PATH="$HOME/Library/Photos/Libraries/Syndication.photoslibrary/database/Photo
 USER_ID="$(id -u)"
 
 for daemon in photoanalysisd mediaanalysisd photolibraryd ; do
-  launchctl disable "gui/$USER_ID/com.apple.$daemon";
-  launchctl kill -TERM "gui/$USER_ID/com.apple.$daemon";
+  launchctl disable "gui/$USER_ID/com.apple.$daemon" >/dev/null 2>&1 ;
+  launchctl kill -TERM "gui/$USER_ID/com.apple.$daemon" >/dev/null 2>&1 ;
 done
 
 # Wait for sqlite DB release
@@ -49,7 +49,7 @@ sync "$DB_PATH"
 
 # Check if the database exists before running commands
 if [ -f "$DB_PATH" ]; then
-  /usr/bin/sqlite3 "$DB_PATH" <<EOF
+  /usr/bin/sqlite3 "$DB_PATH" >/dev/null 2>&1 <<EOF
 PRAGMA journal_size_limit=0;
 PRAGMA wal_autocheckpoint=500;
 PRAGMA wal_checkpoint(TRUNCATE);
