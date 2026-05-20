@@ -103,7 +103,7 @@
 		015D9C082FBC411D00FDE8AA = {
 			isa = PBXGroup;
 			children = (
-				015D9C132FBC411E00FDE8AA /* PhotoanalysisdHydraKiller */,
+				015D9C132FBC411E00FDE8AA /* truncatesyndication */,
 				015D9C202FBD928A00FDE8AA /* HydraKillerLauncher */,
 				015D9C362FBD928D00FDE8AA /* HydraKillerLauncherTests */,
 				015D9C402FBD928D00FDE8AA /* HydraKillerLauncherUITests */,
@@ -122,13 +122,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		015D9C132FBC411E00FDE8AA /* PhotoanalysisdHydraKiller */ = {
+		015D9C132FBC411E00FDE8AA /* truncatesyndication */ = {
 			isa = PBXGroup;
 			children = (
 				015D9C142FBC411E00FDE8AA /* main.c */,
 				015D9C4E2FBD933300FDE8AA /* truncate_syndication_wal.sh */,
 			);
-			path = PhotoanalysisdHydraKiller;
+			path = truncatesyndication;
 			sourceTree = "<group>";
 		};
 		015D9C202FBD928A00FDE8AA /* HydraKillerLauncher */ = {
