@@ -32,11 +32,13 @@ from the App bundle.
 - `truncate_syndication_wal.sh`: The underlying POSIX script that sequentially
   disables and kills the daemons, monitors file locks via `lsof` to prevent
   database corruption, and safely truncates the write-ahead log.
-- Launch Agent: Automates execution on a periodic background interval (e.g., hourly).
-  - **On macOS Monterey:** `com.lyraphase.HydraKillerLauncher.truncatesyndication.plist`
+- Launch Agent: Automates execution on a periodic background interval
+  (e.g., hourly).
+  - **On macOS Monterey:**
+    `com.lyraphase.HydraKillerLauncher.truncatesyndication.plist` —
     A native user `LaunchAgent` that uses the older `Program` and
    `ProgramArguments` `plist` keys, for macOS 12.x compatibility
-  - **On macOS Ventura or later:** `com.lyraphase.HydraKillerLauncher.plist`: A
+  - **On macOS Ventura or later:** `com.lyraphase.HydraKillerLauncher.plist` — A
     native bundled `LaunchAgent` that uses `BundleProgram` `plist` key to launch
     the embedded shim and script.  This makes it possible for the
     `HydraKillerLauncher.app` to register the `LaunchAgent` with Apple's
@@ -117,7 +119,8 @@ To run manual mitigation immediately at any time:
 
 ## 🧾 License
 
-This project is open-source software licensed under the [GNU Affero General Public License v3.0 (AGPLv3)][agpl-3.0].
+This project is open-source software licensed under the
+[GNU Affero General Public License v3.0 (AGPLv3)][agpl-3.0].
 
 See [LICENSE](LICENSE)
 
