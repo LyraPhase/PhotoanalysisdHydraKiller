@@ -90,6 +90,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1420;
+				ORGANIZATIONNAME = LyraPhase;
 				TargetAttributes = {
 					015D9C102FBC411E00FDE8AA = {
 						CreatedOnToolsVersion = 14.2;
