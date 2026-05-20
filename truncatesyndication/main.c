@@ -35,12 +35,14 @@ int main(int argc, const char *argv[]) {
     // HydraKillerLauncher.app/Contents/MacOS/hyrakiller_launcher
     char *last_slash = strrchr(real_binary_path, '/'); // strips binary name
     if (last_slash) *last_slash = '\0';
+    last_slash = strrchr(real_binary_path, '/');       // strips "LaunchAgents"
+    if (last_slash) *last_slash = '\0';
     last_slash = strrchr(real_binary_path, '/');       // strips "MacOS"
     if (last_slash) *last_slash = '\0';
 
     // 4. Construct the path to the Resources/ directory where the script lives
     char script_path[PATH_MAX];
-    snprintf(script_path, sizeof(script_path), "%s/Resources/truncate_syndication_wal.sh", real_binary_path);
+    snprintf(script_path, sizeof(script_path), "%s/Resources/LaunchAgents/truncate_syndication_wal.sh", real_binary_path);
     printf("Launching script from path: %s\n", script_path);
 
     // 5. Build the arguments array for execv
