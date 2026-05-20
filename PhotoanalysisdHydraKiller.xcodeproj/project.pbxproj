@@ -97,6 +97,7 @@
 		015D9C432FBD928D00FDE8AA /* HydraKillerLauncherUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HydraKillerLauncherUITestsLaunchTests.m; sourceTree = "<group>"; };
 		015D9C4E2FBD933300FDE8AA /* truncate_syndication_wal.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = truncate_syndication_wal.sh; sourceTree = "<group>"; };
 		015D9C522FBD991200FDE8AA /* com.lyraphase.truncatesyndication.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = com.lyraphase.truncatesyndication.plist; sourceTree = "<group>"; };
+		015D9C642FBDAC6E00FDE8AA /* truncatesyndication.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = truncatesyndication.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +157,7 @@
 		015D9C132FBC411E00FDE8AA /* truncatesyndication */ = {
 			isa = PBXGroup;
 			children = (
+				015D9C642FBDAC6E00FDE8AA /* truncatesyndication.entitlements */,
 				015D9C142FBC411E00FDE8AA /* main.c */,
 				015D9C4E2FBD933300FDE8AA /* truncate_syndication_wal.sh */,
 			);
@@ -525,8 +527,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALTERNATE_PERMISSIONS_FILES = "";
+				CODE_SIGN_ENTITLEMENTS = truncatesyndication/truncatesyndication.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "© 🄯 2026 LyraPhase";
 				MACOSX_DEPLOYMENT_TARGET = 12.7;
@@ -540,8 +544,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALTERNATE_PERMISSIONS_FILES = "";
+				CODE_SIGN_ENTITLEMENTS = truncatesyndication/truncatesyndication.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "© 🄯 2026 LyraPhase";
 				"INFOPLIST_KEY_NSHumanReadableCopyright[sdk=*]" = "© 🄯 2026 LyraPhase";
@@ -562,6 +568,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Photoanalysisd Hydra Killer Launcher";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 LyraPhase. All rights reserved.";
@@ -588,6 +595,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Photoanalysisd Hydra Killer Launcher";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 LyraPhase. All rights reserved.";
